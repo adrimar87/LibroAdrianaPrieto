@@ -5,6 +5,7 @@ import CartWidget from './components/Cart/CartWidget';
 import carito from './imagenes/carrito.png'
 import logo from './imagenes/LogoL.svg';
 import ItemListContainer from './components/Item/ItemListContainer';
+import Contador from './components/ItemCount/Contador';
 
 
 
@@ -16,11 +17,12 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" style={{width:"130px"}} />   
         
            <Menu/> 
-           <CartWidget imagen={carito} />
+           {/* <CartWidget imagen={carito} /> */}
        
       </header>
       <div className="App-items">
             <ItemListContainer/>
+            <Contador/>
             
       </div> 
     </div>
