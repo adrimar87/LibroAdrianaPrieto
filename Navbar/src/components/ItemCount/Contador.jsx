@@ -43,40 +43,40 @@ const Contador = () => {
     
    <div > 
         
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
+        <div className="container">
+            <div className="row ">
+                <div className="col-sm border border-primary rounded  offset-md-1" >
                     <Mercaderia
                     titulo={'Alguien te espera'}
                     fotobook={"https://http2.mlstatic.com/D_NQ_NP_900880-MLA44582860601_012021-O.webp"}
                     />
                     <div className='conta'>
-                        <button onClick={resta} type="button" class="btn btn-outline-info  btn-lg font-weight-bold">-</button>
+                        <button onClick={resta} type="button" className="btn btn-outline-info  btn-lg font-weight-bold">-</button>
                         <h1>{contador}</h1>
-                        <button onClick={sumar}type="button" class="btn btn-outline-info btn-lg font-weight-bold">+</button>
+                        <button onClick={sumar}type="button" className="btn btn-outline-info btn-lg font-weight-bold">+</button>
                     </div>
                    
                 </div>
-                <div class="col-sm">
+                <div className="col-sm border border-primary rounded  offset-md-1">
                     <Mercaderia
                     titulo={'Imaginieria'}
                     fotobook={"https://http2.mlstatic.com/D_NQ_NP_822774-MLA48578703026_122021-O.webp"}
                     />
                       <div className='conta'>
-                      <button onClick={resta1} type="button" class="btn btn-outline-info  btn-lg font-weight-bold">-</button>
+                      <button onClick={resta1} type="button" className="btn btn-outline-info  btn-lg font-weight-bold">-</button>
                         <h1>{contador1}</h1>
-                        <button onClick={sumar1}type="button" class="btn btn-outline-info btn-lg font-weight-bold">+</button>
+                        <button onClick={sumar1}type="button" className="btn btn-outline-info btn-lg font-weight-bold">+</button>
                     </div>
                 </div>
-                <div class="col-sm">
+                <div className="col-sm border border-primary rounded offset-md-1">
                     <Mercaderia
                     titulo={'Limites'}
                     fotobook={"https://http2.mlstatic.com/D_NQ_NP_886602-MLM47121031247_082021-O.webp"}
                     /> 
                       <div className='conta'>
-                      <button onClick={resta2} type="button" class="btn btn-outline-info  btn-lg font-weight-bold">-</button>
+                      <button onClick={resta2} type="button" className="btn btn-outline-info  btn-lg font-weight-bold">-</button>
                         <h1>{contador2}</h1>
-                        <button onClick={sumar2}type="button" class="btn btn-outline-info btn-lg font-weight-bold">+</button>
+                        <button onClick={sumar2}type="button" className="btn btn-outline-info btn-lg font-weight-bold">+</button>
                      </div>
                 </div>
             </div>

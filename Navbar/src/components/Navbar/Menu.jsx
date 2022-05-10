@@ -7,18 +7,18 @@ const Menu = () => {
     
     
     <div>
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Inicio</a>
+          <ul className="nav">
+            <li className="nav-item">
+              <a className="nav-link active" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Libros</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Libros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comentarios</a>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Comentarios</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contactanos</a>
+            <li className="nav-item">
+              <a className="nav-link disabled" href="#">Contactanos</a>
             </li>
           
           <a href="">   <CartWidget imagen={carito} /></a>

@@ -1,10 +1,13 @@
-// import React, {useState} from 'react'
+import React from 'react'
 
-// const Item = () => {
-//   const [book,setBooks]=useState([])
-//   return (
-//     <ItemList book={book}/>
-//   )
-// }
+export const Item = ({nombre,stock}) => {
+    
+  return (
+  
+    <div>
+        <h1>{nombre}: {stock}</h1> 
+    </div>
+  )
+}
 
-// export default Item
+export default Item

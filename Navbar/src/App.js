@@ -5,44 +5,12 @@ import Menu from './components/Navbar/Menu';
 //import carito from './imagenes/carrito.png'
 import logo from './imagenes/LogoL.svg';
 import ItemListContainer from './components/Item/ItemListContainer';
-import ItemList from './components/Item/ItemList';
 import Contador from './components/ItemCount/Contador';
-import { useEffect, useState } from 'react';
 
+import Content from './components/Contenido/Content'
 
 
 function App() {
- 
-   //empiezan los promise
-  const [book,setBooks]=useState([])
-   const libros=[{id:1,nombre:"Alguien te espera", stock:4},{id:2,nombre:"Imaginieria", stock:8},
-   {id:3,nombre:"Limites", stock:2}];
-
- 
-  useEffect(() =>{
-
-    const lista= new Promise((resolve,reject)=> {
-      setTimeout(() =>{
-        resolve(libros)
-       },2000 );
-      
-     });
-     lista
-     .then ((res) => {
-                      setBooks(res);
-                      },err => console.log("error",err)
-           )
-    .then(()=>console.log(book))
-     .catch((err)=>console.log(book));
-
-     return()=>{}
-
-
-  },[]
-  ) 
-   //termina promise 
-
-
   return (
     <div className="App" >
       <header className="App-header">
@@ -54,13 +22,18 @@ function App() {
        
       </header>
       <div className="App-items">
-            <ItemListContainer/>
-            <Contador/>
+        <strong>
+            <Content
             
+            titulo={'Beneficios de Leer'}
+            texto={'Leer es como llevar nuestro cerebro a un gimnasio, aumenta la inteligencia, estimula la creatividad, atrasa la aparicion de enfermedades neurodegenerativas y demencia, genera empatia, quita el estres, ayuda al insomnio.'}
+            />
+        </strong>
+            <Contador/>
+                              
       </div> 
       <div className='stock'>
-            <h1>Stock Libros</h1>
-            <ItemList book={book}/>
+          <ItemListContainer/>  
       
       </div>  
     </div>
