@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import ItemList from '../Item/ItemList';
-import Item from '../Item/Item';
+//import Item from '../Item/Item';
 
 const ItemListContainer = () => {
   //empiezan los promise
@@ -33,22 +33,16 @@ const ItemListContainer = () => {
 
     <div className="container">
     
-      <div className="row"> 
+      {/* <div className="row"> 
         <div className="col-sm">
-           
-        </div>
-       
-        
-      </div>
-      <div className="row">
-        <div className="col-sm">
-        <h1>Stock Libros</h1>
-               
-        <ItemList book={book}/>
-       
-
-                
-        </div>    
+         </div>      
+      </div> */}
+      <div className="row stock">
+          <h1>Stock Libros</h1>
+          <ItemList book={book}/>
+        {/* <div className="col-sm stock">            
+                                  
+        </div>     */}
       </div>
     </div>
    )

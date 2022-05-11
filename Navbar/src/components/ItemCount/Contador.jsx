@@ -41,13 +41,13 @@ const Contador = () => {
     //Fin logica contadores
   return (
     
-   <div > 
+   <div className='tituloLibros'> 
         
-        <div className="container">
+        <div className="container tituloLibros">
             <div className="row ">
-                <div className="col-sm border border-primary rounded  offset-md-1" >
+                <div className="col-sm border border-primary rounded  offset-md-1 " >
                     <Mercaderia
-                    titulo={'Alguien te espera'}
+                     titulo={'Alguien te espera'}
                     fotobook={"https://http2.mlstatic.com/D_NQ_NP_900880-MLA44582860601_012021-O.webp"}
                     />
                     <div className='conta'>
